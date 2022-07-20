@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .textc{
+            color: darkgray;
+        }
+        .col1 {
+            grid-area: about;
+        }
+        .col2 {
+            grid-area: tweet;
+        }
+
+        .col3 {
+            grid-area: instagram;
+        }
+
+        .foot{
+            grid-area: footer;
+            padding-top: 35px;
+            border-top: 1px solid gray;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'about tweet instagram'
+            'footer footer footer';
+
+            gap: 15px;
+
+            border-top: 5px solid lightgray;
+            border-left: 5px solid darkgray;
+            border-right: 5px solid darkgray;
+            border-bottom: 5px solid darkgray;
+
+            padding-top: 50px ;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 350px;
+            width: 850px;
+            background-color: rgb(30, 28, 28) ;
+        }
+        .float-label{
+            justify-content: space-around;
+            float: left;
+            padding-right: 20px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+
+        <div id="about" class="col1 textc" > 
+            <h3 style="color: white;">About Us</h3>
+            <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo, labore consectetur incidunt recusandae repellendus animi nam natus corrupti,</p>
+            <img style="margin-right: 5px;" src="images/heritier.JPG" width="10px" alt="">
+            <label>+1 641 819 1234</label>
+            <br>
+            <img style="margin-right: 5px;" src="images/heritier.JPG" width="10px" alt="">
+            <label>email</label>
+            <div style="border-radius: 5px; background-color: rgb(113, 110, 110); width: 60%;">
+                <label >Enter your e-mail</label>
+                <label style="float: right; background-color: orange; border-radius:5px">send</label>
+            </div>
+        </div>
+
+        <div id="tweet" class="col2"> 
+            <h3 class="textc" style="color: white;">Latest Tweet</h3>
+            <ul class="textc" style="font-size: 15px;">
+                <li >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+
+        <div id="instagram" class="col3">
+            <h3 class="textc" style="color: white;">Instagram</h3> 
+
+            <img src="images/heritier.JPG" width="55px" alt="">
+            <img src="images/heritier.JPG" width="55px" alt="">
+            <br>
+            <img src="images/heritier.JPG" width="55px" alt="">
+            <img src="images/heritier.JPG" width="55px" alt="">
+        </div>
+
+        <div id="footer" class="foot">
+            <div style="float: left;">
+                <label class="float-label">Home</label>
+                <label class="float-label">About</label>
+                <label class="float-label">Our works</label>
+                <label class="float-label">Services</label>
+                <label class="float-label">Blog</label>
+                <label class="float-label">Contacts</label>
+            </div>
+            <div style="float: right; color: white;">
+                <label >Colorlib</label>
+            </div>
+
+        </div>
+    </div>
+    
+
+</body>
+</html>
