@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .banner-one{
+            display: flex;
+            color: white;
+            background-color: rgb(2, 2, 197);
+            height: 80px;
+
+        }
+        .banner-two{
+            color: white;
+            background-color: rgb(4, 4, 81);
+            height: 60px;
+        }
+        .banner-three{
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+            height: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            justify-content: space-around;
+        }
+        .banner-four{
+            display: flex;
+            font-size: 15px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0.5%;
+            justify-content: space-around;
+        }
+
+        .main-panel{
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+        .main-column1{
+            flex: 2;
+        }
+        .main-column2{
+            flex: 1;
+        }
+        
+        .sect1-b1{
+            margin-left: 10%;
+            display: flex; 
+            align-items: baseline; 
+            gap: 10px;
+        }
+
+        .sect2-b1{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 10px;
+        }
+
+        .sect1-b2{
+            display: flex;
+            padding-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="banner-one" id="banner-one">
+        <div class="sect1-b1">
+            <div>
+                <h1>techradar 
+                    <label style="color: darkred; float: right;">.</label>
+                </h1>
+            </div>
+            <div><h5>THE SOURCE FOR TECH BUYING ADVICE</h5></div>
+        </div>
+        <div class="sect2-b1">
+            <div>
+                <label style="font-size:x-small;">US Edition </label>
+                <img style="float:right; margin-left: 5px;" src="images/united-states-of-america.ico" alt="" width="25px">
+            </div>
+            <hr>
+            <div><img src="images/facebook.ico" alt="" width="20px"></div>
+            <div><img src="images/twitter.ico" alt="" width="20px"></div>
+            <div><img src="images/movie.ico" alt="" width="20px"></div>
+            <div><img src="images/flipboard.ico" alt="" width="20px"></div>
+            <div>RSS</div>
+            <div>subscribe</div>
+            <div>search</div>
+        </div>
+    </div>
+    <div class="banner-two" id="banner-two">
+        <div class="sect1-b2">
+            <div style="flex:80%; display: flex; justify-content: space-between;">
+                <div>Home</div>
+                <div>News</div>
+                <div>Best</div>
+                <div>Reviews</div>
+                <div>Opinion</div>
+                <div>How To</div>
+                <div>Versus</div>
+                <div>More</div>
+            </div>
+            <div style="flex:20%; margin-left: 90px; display: flex; justify-content: flex-end;">
+                <div style="background-color: purple; flex: 40%">techradar.pro</div>
+                <div style="background-color: black; flex: 10%">trg</div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-three" id="banner-two">
+        <div style="color: rgb(172, 58, 77);">Trending </div>
+        <div>MacBook Air M2 </div>
+        <div>Nothing Phone 1 </div>
+        <div>iOS 16 </div>
+        <div>iPhone 14 </div>
+        <div>Best VPN </div>
+        <div style="color: lightgray;">createSpace </div>
+    </div>
+    <div class="banner-four" id="banner-two">
+        <p>TechRadar is supported by its audience. When you purchase through links on our site, we may earn an affiliate commission. <u>Here’s why you can trust us</u>.</p>
+    </div>
+    <div class="main-panel" id="main-panel">
+        <div class="main-column1">
+            <div style="width: 35%; display: flex; gap: 7px;">
+                <div><a href="">Home &gt;</a> </div>
+                <div><a href="">How To &gt;</a> </div>
+                <div><a href="">Software</a></div>
+            </div>
+            <h1>World Athletics Championships live stream: how to watch Oregon22 online for free</h1>
+            <p style="font-size:small;">By Aatif Sulleyman published 1 day ago</p>
+            <p style="font-size:large;">Jamaican and US sprinters shine</p>
+            <div style="padding-bottom: 25px;">
+                <img src="images/facebook.ico" alt="" width="25px">
+                <img src="images/twitter.ico" alt="" width="25px">
+                <img src="images/pinterest.ico" alt="" width="25px">
+                <img src="images/flipboard.ico" alt="" width="25px">
+                <img src="images/mail.ico" alt="" width="25px">
+            </div>
+            <img src="images/1.webp" alt="" width="700px">
+
+        </div>
+        <div class="main-column2">
+            <hr>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div >
+                    <img src="images/mail.ico" alt="" width="35px">
+                </div>
+                <div >
+                    <h3>TECHRADAR NEWSLETTER</h3>
+                </div>
+            </div>
+            <hr>
+            <p>Sign up to get breaking news, reviews, opinion, analysis and more, plus the hottest tech deals!</p>
+            <form action="">
+                <input type="text" value="Your email address" style="display: block; width: 100%;">
+                <div style="display: flex; flex-direction:column; gap: 5px; font-size: small; margin-top: 15px;">
+                    <label>
+                        <input type="checkbox" name="" id=""> Contact me with news and offers from other Future brands
+                    </label>
+                    <label>
+                        <input type="checkbox" name="" id=""> Receive email from us on behalf of our trusted partners or sponsors
+                    </label>
+                </div>
+            </form>
+            <div style="background-color: blue; width:100%; height:7%; margin-top: 5px; color: white; text-align: center;">
+                <label style="width: 100px;margin-top: 3.5%; display: inline-block; ;">SIGN ME UP</label>
+            </div>
+            <p style="font-size: x-small;">By submitting your information you agree to the Terms & Conditions(opens in new tab) and Privacy Policy(opens in new tab) and are aged 16 or over.</p>
+            <hr>
+            <div style="display: flex; background-color: blue; color: white; text-align: center; height: 40px;">
+                <div style="flex:1; background-color: white; color: black;margin-top: 1%; margin-left: 1%;"><label style="display:inline-block; margin-top: 10px;">Most Popular</label></div>
+                <div style="flex:1"><label style="display:inline-block; margin-top: 10px;">Most Shared</label></div>
+            </div>
+            <div style="display: flex;">
+                <div><img src="images/2.webp" alt="" width="100%"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
